@@ -1,7 +1,3 @@
-/* ===============================
-   BACKGROUND ANIMADO PREMIUM
-================================= */
-
 const canvas = document.createElement("canvas");
 canvas.id = "bgCanvas";
 document.body.appendChild(canvas);
@@ -48,9 +44,6 @@ function animateParticles(){
 }
 animateParticles();
 
-/* ===============================
-   GRADIENT DINÂMICO
-================================= */
 
 const gradient = document.createElement("div");
 gradient.className="gradient-overlay";
@@ -66,9 +59,6 @@ document.addEventListener("touchmove",(e)=>{
     document.body.style.setProperty("--y",e.touches[0].clientY+"px");
 });
 
-/* ===============================
-   SISTEMA DE AULAS
-================================= */
 
 document.addEventListener("DOMContentLoaded",()=>{
     if(document.getElementById("aulasContainer")){
@@ -128,9 +118,6 @@ function abrirModalAula(aula){
     document.body.appendChild(modal);
 }
 
-/* ===============================
-   CALENDÁRIO 2026
-================================= */
 
 let mesAtual = new Date().getMonth();
 
