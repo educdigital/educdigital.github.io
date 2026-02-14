@@ -210,3 +210,15 @@ document.querySelectorAll(".sidebar a").forEach(link=>{
         }
     });
 });
+
+
+
+
+
+const modal = document.getElementById("aulaModal");
+
+modal.addEventListener("click", function(e){
+    if(e.target === modal){
+        modal.classList.remove("active");
+    }
+});
