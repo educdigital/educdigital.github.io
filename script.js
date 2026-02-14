@@ -115,8 +115,22 @@ function abrirModalAula(aula){
             </button>
         </div>
     `;
+
     document.body.appendChild(modal);
+
+    const caixa = modal.querySelector(".modal");
+
+    // Fecha ao clicar fora
+    modal.addEventListener("click", () => {
+        modal.remove();
+    });
+
+    // Impede fechar ao clicar dentro da caixa
+    caixa.addEventListener("click", (e) => {
+        e.stopPropagation();
+    });
 }
+
 
 
 let mesAtual = new Date().getMonth();
