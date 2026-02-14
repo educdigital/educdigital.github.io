@@ -116,14 +116,6 @@ function abrirModalAula(aula){
         </div>
     `;
     document.body.appendChild(modal);
-
-modal.addEventListener("click", function(e) {
-    if (e.target === modal) {
-        modal.remove();
-    }
-});
-
-
 }
 
 
