@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Educação Digital 2026</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="mobile-header">
+    <div>Educação Digital</div>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+</div>
+
+<div class="overlay" onclick="toggleMenu()"></div>
+
+<div class="background"></div>
+
+<nav class="sidebar">
+    <h2>Educação Digital</h2>
+    <a href="#aulas">📘 Aulas</a>
+    <a href="#calendario">📅 Calendário</a>
+    <a href="professores.html">👨‍🏫 Professores</a>
+    <a href="materiais.html">📚 Materiais</a>
+</nav>
+
+<main class="content">
+
+<section id="aulas">
+    <h1>Aulas 2026</h1>
+
+    <input type="text" id="busca" placeholder="🔎 Buscar aula...">
+
+    <div id="aulasContainer" class="aulas-grid"></div>
+</section>
+
+<section id="calendario">
+    <h1>Calendário 2026</h1>
+    <div class="mes-selector">
+        <button onclick="mudarMes(-1)">◀</button>
+        <span id="mesAtual"></span>
+        <button onclick="mudarMes(1)">▶</button>
+    </div>
+    <div id="calendarGrid" class="calendar-grid"></div>
+</section>
+
+</main>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

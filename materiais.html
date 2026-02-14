@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Materiais Didáticos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="mobile-header">
+    <div>Educação Digital</div>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+</div>
+
+<div class="overlay" onclick="toggleMenu()"></div>
+
+<div class="background"></div>
+
+<nav class="sidebar">
+    <h2>Educação Digital</h2>
+    <a href="index.html">📘 Aulas</a>
+    <a href="index.html#calendario">📅 Calendário</a>
+    <a href="professores.html">👨‍🏫 Professores</a>
+    <a href="#" class="active">📚 Materiais</a>
+</nav>
+
+<main class="content">
+<h1>Materiais Didáticos</h1>
+
+<div class="card-grid">
+    <div class="card">
+        <h3>Guia de Segurança</h3>
+        <p>Boas práticas para navegação segura.</p>
+        <a href="#">Baixar PDF</a>
+    </div>
+
+    <div class="card">
+        <h3>Slides HTML</h3>
+        <p>Material da aula introdutória.</p>
+        <a href="#">Baixar Slides</a>
+    </div>
+
+    <div class="card">
+        <h3>Lista JavaScript</h3>
+        <p>Exercícios de lógica.</p>
+        <a href="#">Baixar</a>
+    </div>
+</div>
+
+</main>
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
