@@ -116,6 +116,14 @@ function abrirModalAula(aula){
         </div>
     `;
     document.body.appendChild(modal);
+
+modal.addEventListener("click", function(e) {
+    if (e.target === modal) {
+        modal.remove();
+    }
+});
+
+
 }
 
 
@@ -209,16 +217,4 @@ document.querySelectorAll(".sidebar a").forEach(link=>{
             document.querySelector(".overlay").classList.remove("active");
         }
     });
-});
-
-
-
-
-
-const modal = document.getElementById("aulaModal");
-
-modal.addEventListener("click", function(e){
-    if(e.target === modal){
-        modal.classList.remove("active");
-    }
 });
