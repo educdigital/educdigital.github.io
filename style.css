@@ -11,9 +11,6 @@ color:white;
 overflow-x:hidden;
 }
 
-/* =========================
-   BACKGROUND
-========================= */
 
 canvas#bgCanvas{
 position:fixed;
@@ -29,9 +26,6 @@ z-index:-1;
 transition:0.1s;
 }
 
-/* =========================
-   HEADER MOBILE
-========================= */
 
 .mobile-header{
 display:none;
@@ -53,9 +47,6 @@ font-size:26px;
 cursor:pointer;
 }
 
-/* =========================
-   SIDEBAR
-========================= */
 
 .sidebar{
 width:250px;
@@ -90,18 +81,12 @@ transition:0.3s;
 background:rgba(0,80,200,0.3);
 }
 
-/* =========================
-   CONTENT
-========================= */
 
 .content{
 margin-left:270px;
 padding:60px;
 }
 
-/* =========================
-   CARDS
-========================= */
 
 .card-grid,
 .aulas-grid{
@@ -130,9 +115,6 @@ border-radius:15px;
 margin-bottom:15px;
 }
 
-/* =========================
-   INPUT
-========================= */
 
 input{
 width:100%;
@@ -145,9 +127,6 @@ outline:none;
 margin:20px 0;
 }
 
-/* =========================
-   CALENDÁRIO
-========================= */
 
 .calendar-grid{
 display:grid;
@@ -177,9 +156,7 @@ border:2px solid #0077ff;
 box-shadow:0 0 12px #00aaff;
 }
 
-/* =========================
-   MODAL
-========================= */
+ 
 
 .modal-overlay{
 position:fixed;
@@ -206,9 +183,6 @@ from{transform:scale(0.85);}
 to{transform:scale(1);}
 }
 
-/* =========================
-   RESPONSIVO
-========================= */
 
 @media(max-width:900px){
 
