@@ -99,56 +99,24 @@ function filtrarAulas(e){
     renderAulas(filtradas);
 }
 
-
 function abrirModalAula(aula){
-
-    const modal = document.createElement("div");
-    modal.className = "modal-overlay";
-
-    modal.innerHTML = `
+    const modal=document.createElement("div");
+    modal.className="modal-overlay";
+    modal.innerHTML=`
         <div class="modal">
             <h2>${aula.titulo}</h2>
-
-            <img src="${aula.imagem}" 
-                 style="width:100%;border-radius:15px;margin:15px 0;">
-
+            <img src="${aula.imagem}" style="width:100%;border-radius:15px;margin:15px 0;">
             <p><strong>Data:</strong> ${aula.data}</p>
             <p><strong>Professor:</strong> ${aula.professor}</p>
-
-            <p style="margin-top:15px;">
-                ${aula.descricao}
-            </p>
-
+            <p style="margin-top:15px;">${aula.descricao}</p>
             <button onclick="this.closest('.modal-overlay').remove()"
-                style="
-                    margin-top:20px;
-                    padding:10px 20px;
-                    border:none;
-                    border-radius:10px;
-                    background:#0077ff;
-                    color:white;
-                    cursor:pointer;
-                ">
-                Fechar
+            style="margin-top:20px;padding:10px 20px;border:none;border-radius:10px;background:#0077ff;color:white;cursor:pointer;">
+            Fechar
             </button>
         </div>
     `;
-
     document.body.appendChild(modal);
-
-    const caixa = modal.querySelector(".modal");
-
-    
-    modal.addEventListener("pointerdown", () => {
-        modal.remove();
-    });caixa
-
-    
-    caixa.addEventListener("pointerdown", (e) => {
-        e.stopPropagation();
-    });
 }
-
 
 
 let mesAtual = new Date().getMonth();
