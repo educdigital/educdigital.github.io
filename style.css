@@ -232,23 +232,3 @@ padding:90px 20px 40px 20px;
 
 
 
-.modal-overlay{
-position:fixed;
-inset:0;
-background:rgba(0,0,0,0.6);
-display:flex;
-align-items:center;
-justify-content:center;
-z-index:9999;
-touch-action:none; 
-}
-
-.modal{
-background:white;
-padding:25px;
-border-radius:15px;
-max-width:600px;
-width:90%;
-max-height:90vh;
-overflow:auto;
-}
