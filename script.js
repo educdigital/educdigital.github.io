@@ -102,9 +102,6 @@ function filtrarAulas(e){
 
 function abrirModalAula(aula){
 
-    // trava scroll do fundo
-    document.body.style.overflow = "hidden";
-
     const modal = document.createElement("div");
     modal.className = "modal-overlay";
 
@@ -122,7 +119,7 @@ function abrirModalAula(aula){
                 ${aula.descricao}
             </p>
 
-            <button id="fecharModal"
+            <button onclick="this.closest('.modal-overlay').remove()"
                 style="
                     margin-top:20px;
                     padding:10px 20px;
@@ -140,26 +137,18 @@ function abrirModalAula(aula){
     document.body.appendChild(modal);
 
     const caixa = modal.querySelector(".modal");
-    const botaoFechar = modal.querySelector("#fecharModal");
 
-    function fechar(){
-        document.body.style.overflow = ""; // libera scroll
+    
+    modal.addEventListener("pointerdown", () => {
         modal.remove();
-    }
+    });caixa
 
-    // fechar ao clicar fora
-    modal.addEventListener("pointerdown", fechar);
-
-    // impedir fechar ao clicar dentro
+    
     caixa.addEventListener("pointerdown", (e) => {
         e.stopPropagation();
     });
-
-    // botão fechar
-    botaoFechar.addEventListener("click", fechar);
 }
 
- 
 
 
 let mesAtual = new Date().getMonth();
