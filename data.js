@@ -6,7 +6,7 @@ data:"05-03-2026",
 professor:"Profa. Ericka",
 categoria:"Introduções",
 imagem:"imgs/img1.jpg",
-descricao:"Discussão sobre o foco de ensino da matéria e início do uso do livro na Página 138."
+descricao:"- Discussão sobre o foco de ensino da matéria<br>- Início do uso do livro na Página 138."
 },
 {
 id:2,
