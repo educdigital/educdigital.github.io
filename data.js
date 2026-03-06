@@ -5,7 +5,7 @@ titulo:"Introdução à Educação Digital",
 data:"05-03-2026",
 professor:"Profa. Ericka",
 categoria:"Introduções",
-imagem:"imgs/img1.jpg",
+imagem:"imgs/educdigitalaula1.jpeg",
 descricao:"- Discussão sobre o foco de ensino da matéria<br>- Início do uso do livro na Página 138."
 }
 ];
